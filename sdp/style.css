@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*======= CSS variables =======*/
+:root {
+    --white-color: #fff;
+    --dark-color: #222;
+    --body-bg-color: #fff;
+    --section-bg-color: #1F1D1C;
+    --navigation-item-hover-color: #3b5378;
+
+    --text-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    --box-shadow: 0 5px 25px rgb(0 0 0 / 20%);
+
+    --scroll-bar-color: #1F1D1C;
+    --scroll-thumb-color: #302e2e;
+    --scroll-thumb-hover-color: #2b2a2a;
+}
+
+/*======= Scroll bar =======*/
+::-webkit-scrollbar {
+    width: 11px;
+    background: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--scroll-thumb-hover-color);
+}
+
+/*======= Main CSS =======*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #1F1D1C;
+    color: #fff;
+}
+
+.navSection {
+    z-index: 999;
+    position: fixed;
+    width: 100%;
+    height: calc(5rem + 1rem);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    transition-property: height, background;
+    text-align: center;
+}
+
+.navSection.sticky {
+    height: calc(4rem + 1rem);
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#container1 {
+    padding-top: 130px;
+}
+
+.container {
+    height: fit-content;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#container-title2, #container-title4 {
+    padding-bottom: 50px;
+}
+
+#container2, #container3, #container4 {
+    padding-bottom: 40px;
+}
+
+ #container-images2, #container-images3 {
+    padding-bottom: 0;
+}
+
+.container-images {
+    display: flex;
+    padding: 35px;
+    height: fit-content;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+}
+
+.wrapper, .wrapper2, .wrapper3, .wrapper4 {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+
+.wrapper i, .wrapper2 i, .wrapper3 i, .wrapper4 i {
+    top: 50%;
+    height: 44px;
+    width: 44px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.15rem;
+    position: absolute;
+    text-align: center;
+    line-height: 44px;
+    background: #000;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+
+.wrapper i:active, .wrapper2 i:active, .wrapper3 i:active, .wrapper4 i:active {
+    transform: translateY(-50%) scale(0.9);
+}
+
+.wrapper i:hover, .wrapper2 i:hover, .wrapper3 i:hover, .wrapper4 i:hover {
+    background: #414141;
+}
+
+.wrapper i:first-child, .wrapper2 i:first-child, .wrapper3 i:first-child, .wrapper4 i:first-child {
+    left: -22px;
+    display: none;
+}
+
+.wrapper i:last-child, .wrapper2 i:last-child, .wrapper3 i:last-child, .wrapper4 i:last-child {
+    right: -22px;
+}
+
+.wrapper .carousel, .wrapper2 .carousel2, .wrapper3 .carousel3, .wrapper4 .carousel4 {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel.dragging, .carousel2.dragging, .carousel3.dragging, .carousel4.dragging {
+    cursor: grab;
+    scroll-behavior: auto;
+}
+
+.carousel.dragging img, .carousel2.dragging img, .carousel3.dragging img, .carousel4.dragging img{
+    pointer-events: none;
+}
+
+.carousel img {
+    height: 330px;
+    object-fit: cover;
+    user-select: none;
+    width: calc(100% / 3);
+    transition: 0.5s;
+}
+
+.carousel2 img, .carousel3 img, .carousel4 img {
+    height: 330px;
+    object-fit: contain;
+    user-select: none;
+    width: calc(100% / 3);
+    transition: 0.5s;
+}
+
+.carousel img:hover, .carousel2 img:hover, .carousel3 img:hover, .carousel4 img:hover {
+    opacity: 0.6;
+}
+
+.carousel img:first-child, .carousel2 img:first-child, .carousel3 img:first-child, .carousel4 img:first-child {
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+    .carousel img, .carousel2 img, .carousel3 img, .carousel4 img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img, .carousel2 img, .carousel3 img, .carousel4 img {
+        width: 100%;
+    }
+}
+

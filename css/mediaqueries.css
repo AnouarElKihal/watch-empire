@@ -1,0 +1,243 @@
+@media screen and (min-width: 1200px) {
+    .contact-info {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    header .nav-bar {
+        padding: 0 50px;
+    }
+
+    .section {
+        padding: 25px 50px;
+    }
+
+    .swiper-slide .text-content {
+        margin: 0 120px 0 50px;
+    }
+
+    .bg-slider-thumbs {
+        bottom: 3em;
+    }
+
+    .main {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text h1 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .contact-bg .text {
+        width: 50%;
+    }
+    .contact-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 885px) {
+    header .nav-bar {
+        padding: 25px 20px;
+    }
+
+    .section {
+        padding: 25px 20px;
+    }
+
+    .swiper-slide .text-content {
+        margin: 0 70px 0 20px;
+    }
+
+    .swiper-slide .text-content .title {
+        font-size: 3em;
+    }
+
+    .swiper-slide .text-content p {
+        font-size: 0.9em;
+    }
+
+    /*======= Navigation menu =======*/
+    .nav-menu-btn {
+        display: block;
+        color: var(--white-color);
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+
+    .nav-close-btn {
+        display: block;
+        color: var(--dark-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 1.3em;
+        margin: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .navigation {
+        z-index: 99999;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.25);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease;
+    }
+
+    .navigation.active {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navigation .nav-items {
+        position: relative;
+        background: var(--white-color);
+        width: 400px;
+        max-width: 400px;
+        display: grid;
+        place-content: center;
+        margin: 20px;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: var(--box-shadow);
+        transform: translateY(-200px);
+        transition: 0.3s ease;
+    }
+
+    .navigation.active .nav-items {
+        transform: translateY(0);
+    }
+
+    .navigation .nav-items a {
+        color: var(--dark-color);
+        font-size: 1em;
+        margin: 15px 50px;
+        transition: 0.3s ease;
+    }
+
+    .navigation .nav-items a:hover {
+        color: var(--navigation-item-hover-color);
+    }
+
+    .swiper-slide .text-content .read-btn {
+        font-size: 0.9em;
+        padding: 5px 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contact-bg .text {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .about-text p {
+        font-size: 15px;
+    }
+    .about-text h5 {
+        font-size: 20px;
+    }
+    .about-text h1 {
+        font-size: 50px;
+    }
+    .about-text {
+        width: fit-content;
+        height: fit-content;
+    }
+    .main img {
+        width: 100%;
+    }
+}
+
+/*OROLOGI SECTION*/
+
+@media screen and (max-width: 1550px) {
+    .orologi .rolex .rolexText h2, .orologi .rolex .rolexText hr, .orologi .rolex .rolexText p, .orologi .rolex .rolexText button {
+        margin-left: 25px;
+    }
+    .orologi .omega .omegaText h2, .orologi .omega .omegaText hr, .orologi .omega .omegaText p, .orologi .omega .omegaText button {
+        margin-left: 25px;
+    }
+    .orologi .ap .apText h2, .orologi .ap .apText hr, .orologi .ap .apText p, .orologi .ap .apText button {
+        margin-right: 25px;
+    }
+    .orologi .pp .ppText h2, .orologi .pp .ppText hr, .orologi .pp .ppText p, .orologi .pp .ppText button {
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 1380px) {
+    .orologi .rolex .rolexText h2, .orologi .omega .omegaText h2 {
+        font-size: 30px;
+    }
+    .orologi .rolex .rolexText p, .orologi .omega .omegaText p {
+        width: auto;
+    }
+    .orologi .ap .apText h2, .orologi .pp .ppText h2 {
+        font-size: 30px;
+    }
+    .orologi .ap .apText p, .orologi .pp .ppText p {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .orologi .rolex .rolexText h2, .orologi .omega .omegaText h2 {
+        font-size: 28px;
+    }
+    .orologi .rolex .rolexText p, .orologi .omega .omegaText p {
+        font-size: 13px;
+    }
+    .orologi .ap .apText h2, .orologi .pp .ppText h2 {
+        font-size: 28px;
+    }
+    .orologi .ap .apText p, .orologi .pp .ppText p {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .orologi .rolex, .orologi .omega {
+        flex-direction: column;
+    }
+    .orologi .rolex img, .orologi .omega img {
+        width: 100%;
+    }
+    .orologi .rolex .rolexText h2, .orologi .omega .omegaText h2{
+        margin-top: 15px;
+    }
+
+    .orologi .ap, .orologi .pp {
+        flex-direction: column;
+        flex-direction: column-reverse; 
+    }
+    .orologi .ap img, .orologi .pp img {
+        width: 100%;
+    }
+    .orologi .ap .apText h2, .orologi .pp .ppText h2{
+        margin-top: 15px;
+    }
+}
+
