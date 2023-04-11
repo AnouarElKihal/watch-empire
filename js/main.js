@@ -57,3 +57,5 @@ function handleAnimation() {
 }
 window.addEventListener('scroll', handleAnimation);
 
+
+// code written by Anouar El Kihal (eabug) 
