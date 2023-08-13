@@ -306,5 +306,3 @@ carousel4.addEventListener("touchmove", dragging4);
 
 document.addEventListener("mouseup", dragStop4);
 carousel4.addEventListener("touchend", dragStop4);
-
-// code written by Anouar El Kihal (eabug) 
