@@ -709,17 +709,3 @@ header .nav-bar {
     align-items: center;
     justify-content: center;
 }
-
-.footerWDM {
-    height: fit-content;
-    width: 100%;
-    background: #2b2a2a;
-    color: #fff;
-    text-align: center;
-    padding-top: 50px;
-}
-
-.footerWDM img {
-    height: 150px;
-    width: 150px;
-}
