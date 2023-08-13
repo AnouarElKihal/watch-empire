@@ -4,4 +4,3 @@ window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-// code written by Anouar El Kihal (eabug) 
